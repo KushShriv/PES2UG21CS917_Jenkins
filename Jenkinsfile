@@ -9,18 +9,18 @@ pipeline {
     //   }
     // }
   stage('Build') {
-    stepsdfs {
+    steps {
       build 'PES2UG21CS917-1'
-      sh 'g++ main.cpp -o output'
+      sh 'g++ main2.cpp -o output'
     }
   }
   stage('Test') {
-    stepsdsfd {
+    steps {
       sh './output'
     }
   }
   stage('Deploy') {
-    stepfdsfs {
+    steps {
       echo 'deploy'
     }
   }
