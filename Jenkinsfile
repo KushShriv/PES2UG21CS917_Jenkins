@@ -8,7 +8,7 @@ pipeline {
     //     userRemoteConfigs :[[url:'https://github.com/KushShriv/PES2UG21CS917_Jenkins.git']]])
     //   }
     // }
-  stage( 'Build') {
+  stage('Build') {
     steps {
       build 'PES2UG21CS917-1'
       sh 'g++ main.cpp -o output'
@@ -16,7 +16,7 @@ pipeline {
   }
   stage('Test') {
     steps {
-      sh './output •
+      sh './output'
     }
   }
   stage('Deploy') {
